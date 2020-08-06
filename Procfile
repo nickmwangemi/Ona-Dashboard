@@ -1,0 +1,1 @@
+web: gunicorn ona_dashboard.wsgi --log-file -

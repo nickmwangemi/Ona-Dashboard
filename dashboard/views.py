@@ -16,7 +16,6 @@ def projects(request):
     password = env("ONA_PASSWORD")
 
     response = requests.get(url, auth=(username, password))
-    print(response.status_code)
 
     my_json_response = response.json()
 
@@ -27,7 +26,6 @@ def projects(request):
     private_projects = []
     favourite_projects = []
 
-    print("MY LIST: ", list_of_projects)
     for item in range(len(list_of_projects)):
         project = list_of_projects[item]
 
